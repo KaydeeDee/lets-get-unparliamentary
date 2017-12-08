@@ -1,0 +1,147 @@
+// variables
+
+$primary-color: rgb(34, 30, 30);
+$secondary-color: rgb(254,253,255);
+$highlight:	rgba(228, 3, 3, 0.9);
+
+
+$header-font: 'Vollkorn', serif;
+$paragraph-font:'Lato', sans-serif;
+
+// mixins
+
+@mixin font-size-value($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+// base size
+
+html {
+    font-size: 62.5%;
+}
+
+// wrappers
+
+.wrapper-max {
+     max-width: 1950px;
+     margin: 0 auto;
+}
+
+.wrapper-inner {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.wrapper-inner--box-text {
+    max-width: 95%;
+    min-height: 430px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 40px;
+    background: $secondary-color;
+    border: 3px solid $primary-color;
+    position: relative;
+}
+
+.wrapper-footer-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+// to fix floating footer
+.footer-fixer {
+    min-height: calc(100vh - 44.5px);
+    padding: 1px; 
+}
+
+// background
+
+main {
+    background-image: linear-gradient(to right,rgba(51, 48, 51, 0.7), rgba(33, 37, 31, 0.6)), 
+    url("../images/HOC seats.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1px;
+
+}
+header {
+    text-align: center;
+}
+
+img {
+   max-width: 100%;
+}
+
+// headings
+
+h1 {
+    @include font-size-value(65);
+    color: $secondary-color;
+    margin-top: 5px;
+    margin-bottom: 8%;
+    font-family: $header-font;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-variant: small-caps;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.unparlimentary-change-un--color {
+    font-weight: 700;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: $secondary-color;
+    @include font-size-value(25);
+    margin: 0;
+    font-family: $header-font;
+    font-weight: 300;
+    font-style: italic;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+// General
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    outline: 0;
+}
+
+ footer a, nav a {
+     @include font-size-value(14);
+     font-family: $paragraph-font;
+     font-variant: small-caps;
+}
+
+input {
+     font-family: $paragraph-font;
+}
+
+p {
+     font-family: $paragraph-font;
+     font-weight: 400;
+}
+
+// media queries
+
+@media (max-width: 560px) {
+    h1 {
+        @include font-size-value(40);
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        @include font-size-value(35);
+    }
+}

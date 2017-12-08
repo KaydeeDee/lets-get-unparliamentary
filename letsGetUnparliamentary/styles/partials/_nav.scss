@@ -1,0 +1,51 @@
+nav {
+    padding: 1px;
+}
+
+footer a, nav a, button {
+     @include font-size-value(16);
+     font-family: $header-font;
+     font-variant: small-caps;
+     &:hover {
+        color: $highlight;
+        font-weight: bold;
+    }
+}
+
+.nav-class a {
+    margin-top: 10px;
+    transition: 0.60s;
+    @include font-size-value(22);
+    outline: 0;
+}
+
+.nav-class {
+    display: flex;
+    justify-content: flex-end;
+}
+
+// media queries
+
+@media (max-width: 1220px) {
+    .wrapper-footer-nav {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 905px) {
+    .wrapper-footer-nav {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper-footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-class {
+        a {
+            text-align: center;
+        }
+    }
+}
