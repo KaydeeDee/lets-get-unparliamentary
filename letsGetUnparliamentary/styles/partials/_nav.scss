@@ -6,6 +6,7 @@ footer a, nav a, button {
      @include font-size-value(16);
      font-family: $header-font;
      font-variant: small-caps;
+     transition: 0.4s;
      &:hover {
         color: $highlight;
         font-weight: bold;
@@ -14,7 +15,7 @@ footer a, nav a, button {
 
 .nav-class a {
     margin-top: 10px;
-    transition: 0.60s;
+    transition: 0.3s;
     @include font-size-value(22);
     outline: 0;
 }

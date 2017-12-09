@@ -24,7 +24,7 @@ html {
 // wrappers
 
 .wrapper-max {
-     max-width: 1950px;
+     max-width: 2000px;
      margin: 0 auto;
 }
 
@@ -33,11 +33,16 @@ html {
     margin: 0 auto;
 }
 
+.wrapper-inner--header {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
 .wrapper-inner--box-text {
     max-width: 95%;
     min-height: 430px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 3vh;
     padding: 40px;
     background: $secondary-color;
     border: 3px solid $primary-color;
@@ -55,7 +60,7 @@ html {
 
 // to fix floating footer
 .footer-fixer {
-    min-height: calc(100vh - 44.5px);
+    min-height: calc(100vh - 46px);
     padding: 1px; 
 }
 
@@ -75,16 +80,16 @@ header {
 }
 
 img {
-   max-width: 100%;
+    max-width: 100%;
 }
 
 // headings
 
 h1 {
-    @include font-size-value(65);
+    @include font-size-value(70);
     color: $secondary-color;
-    margin-top: 5px;
-    margin-bottom: 8%;
+    margin-top: 0;
+    margin-bottom: 8vh;
     font-family: $header-font;
     font-weight: 800;
     letter-spacing: 1.5px;
@@ -118,18 +123,18 @@ a {
 }
 
  footer a, nav a {
-     @include font-size-value(14);
-     font-family: $paragraph-font;
-     font-variant: small-caps;
+    @include font-size-value(14);
+    font-family: $paragraph-font;
+    font-variant: small-caps;
 }
 
 input {
-     font-family: $paragraph-font;
+    font-family: $paragraph-font;
 }
 
 p {
-     font-family: $paragraph-font;
-     font-weight: 400;
+    font-family: $paragraph-font;
+    font-weight: 400;
 }
 
 // media queries

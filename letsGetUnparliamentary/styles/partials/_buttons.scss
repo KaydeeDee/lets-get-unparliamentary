@@ -22,7 +22,7 @@ input {
 input[type=submit] {
     padding: 15px 40px;
     font-variant: small-caps;
-    transition: .80s;
+    transition: 0.3s;
     &:hover {
         background: $highlight;
         color: $secondary-color;
@@ -42,7 +42,7 @@ input[type=submit] {
     height: 58px;
     border: 3px solid $primary-color;
     margin: 0;
-    transition: 0.80s;
+    transition: 0.3s;
     font-variant: small-caps;
     @include font-size-value(18);
     font-family: $paragraph-font;
