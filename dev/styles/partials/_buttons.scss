@@ -2,9 +2,6 @@ form {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    &:focus {
-        outline: 0;    
-    }
 }    
     
 input {
@@ -14,9 +11,6 @@ input {
     @include font-size-value(18);
     background: $secondary-color;
     margin-right: 10px;
-    &:focus {
-        outline: 0;    
-    }
 }
         
 input[type=submit] {

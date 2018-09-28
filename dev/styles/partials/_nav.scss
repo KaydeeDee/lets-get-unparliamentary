@@ -9,6 +9,12 @@ footer a, nav a, button {
      transition: 0.4s;
      &:hover {
         color: $highlight;
+    }
+}
+
+button {
+    transition: 0.9s ease;
+    &:hover {
         font-weight: bold;
     }
 }

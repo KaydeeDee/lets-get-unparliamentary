@@ -68,7 +68,7 @@ html {
 
 main {
     background-image: linear-gradient(to right,rgba(51, 48, 51, 0.7), rgba(33, 37, 31, 0.6)), 
-    url("../images/HOC seats.jpg");
+    url("./assets/HOC seats.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@ h1 {
     @include font-size-value(70);
     color: $secondary-color;
     margin-top: 0;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
     font-family: $header-font;
     font-weight: 800;
     letter-spacing: 1.5px;
