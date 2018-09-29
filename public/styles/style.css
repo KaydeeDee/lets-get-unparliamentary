@@ -310,7 +310,8 @@ input[type=submit], form button {
   transition: 0.3s;
   font-variant: small-caps;
   font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif; }
   .again-button:hover {
     background: rgba(228, 3, 3, 0.9);
     color: #fefdff; }

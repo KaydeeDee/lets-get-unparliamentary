@@ -33,6 +33,7 @@ input[type=submit], form button {
     transition: 0.3s;
     font-variant: small-caps;
     @include font-size-value(18);
+    font-family: $paragraph-font;
 
     &:hover {
         background: $highlight;
