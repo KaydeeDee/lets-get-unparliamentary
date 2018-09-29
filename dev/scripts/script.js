@@ -271,10 +271,10 @@
             };
          // end if statements for gerenator
 
-            const finalInsult = (`<h3><span class="insult-style"><p>${insult}</p></span></h3>`);
+            const finalInsult = (`<p class="insult-style">${insult}</p>`);
             $('.insult-generated').html(finalInsult);
 
-            const finalDateOfInsult = (`<h4><span class="date-of-insult"><p>${dateOfInsult}</p></span></h4>`);
+            const finalDateOfInsult = (`<p class="date-of-insult">${dateOfInsult}</p>`);
             $('.date-of-insult').html(finalDateOfInsult);
 
             $('.twitter-query').attr("data-description", insult);

@@ -133,6 +133,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+h1, h2, p {
+  margin: 0;
+  padding: 0; }
+
 .wrapper-max {
   max-width: 2000px;
   margin: 0 auto; }
@@ -141,12 +145,8 @@ html {
   max-width: 880px;
   margin: 0 auto; }
 
-.wrapper-inner--header {
-  max-width: 940px;
-  margin: 0 auto; }
-
 .wrapper-inner--box-text {
-  max-width: 95%;
+  width: 95%;
   min-height: 430px;
   margin: 0 auto;
   margin-bottom: 3vh;
@@ -158,8 +158,7 @@ html {
 .wrapper-footer-nav {
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,61 +179,57 @@ body {
   padding: 1px; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 img {
   max-width: 100%; }
 
 h1 {
-  font-size: 70px;
-  font-size: 7rem;
+  font-size: 6vw;
   color: #fefdff;
-  margin-top: 0;
-  margin-bottom: 5vh;
   font-family: "Vollkorn", serif;
   font-weight: 800;
   letter-spacing: 1.5px;
   font-variant: small-caps;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2); }
 
-.unparlimentary-change-un--color {
+header span {
   font-weight: 700;
   text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3); }
 
-h2 {
-  color: #fefdff;
-  font-size: 25px;
-  font-size: 2.5rem;
-  margin: 0;
-  font-family: "Vollkorn", serif;
-  font-weight: 300;
-  font-style: italic;
-  font-variant: small-caps;
-  letter-spacing: 1px;
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2); }
-
 a {
   text-decoration: none;
-  color: #fefdff;
-  outline: 0; }
+  color: #fefdff; }
+
+p, a {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+a, input, p {
+  font-family: "Lato", sans-serif; }
+
+p {
+  font-weight: 400;
+  color: #221e1e; }
 
 footer a, nav a {
   font-size: 14px;
   font-size: 1.4rem;
-  font-family: "Lato", sans-serif;
   font-variant: small-caps; }
 
-input {
-  font-family: "Lato", sans-serif; }
+main {
+  margin-top: 6vh; }
 
-p {
-  font-family: "Lato", sans-serif;
-  font-weight: 400; }
-
-@media (max-width: 560px) {
+@media (max-width: 900px) {
   h1 {
-    font-size: 40px;
-    font-size: 4rem; } }
+    font-size: 55px;
+    font-size: 5.5rem; } }
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 45px;
+    font-size: 4.5rem; } }
 
 @media (max-width: 350px) {
   h1 {
@@ -254,12 +249,6 @@ footer a, nav a, button {
   footer a:hover, nav a:hover, button:hover {
     color: rgba(228, 3, 3, 0.9); }
 
-button {
-  -webkit-transition: 0.9s ease;
-  transition: 0.9s ease; }
-  button:hover {
-    font-weight: bold; }
-
 .nav-class a {
   margin-top: 10px;
   -webkit-transition: 0.3s;
@@ -275,14 +264,6 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-
-@media (max-width: 1220px) {
-  .wrapper-footer-nav {
-    max-width: 900px; } }
-
-@media (max-width: 905px) {
-  .wrapper-footer-nav {
-    max-width: 700px; } }
 
 @media (max-width: 700px) {
   .wrapper-footer-nav {
@@ -305,49 +286,37 @@ form {
           justify-content: center;
   margin-top: 40px; }
 
-input {
+input, .again-button {
   border: 3px solid #221e1e;
   color: #221e1e;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-size: 18px;
   font-size: 1.8rem;
   background: #fefdff;
   margin-right: 10px; }
 
-input[type=submit] {
-  padding: 15px 40px;
+input[type=submit], form button {
+  padding: 10px 35px;
   font-variant: small-caps;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  input[type=submit]:hover {
+  input[type=submit]:hover, form button:hover {
     background: rgba(228, 3, 3, 0.9);
     color: #fefdff; }
 
 .form-second {
   display: none; }
-  .form-second a {
-    display: none; }
 
 .again-button {
-  background: #fefdff;
-  width: 180px;
-  height: 58px;
-  border: 3px solid #221e1e;
   margin: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-variant: small-caps;
   font-size: 18px;
-  font-size: 1.8rem;
-  font-family: "Lato", sans-serif;
-  color: #221e1e; }
+  font-size: 1.8rem; }
   .again-button:hover {
     background: rgba(228, 3, 3, 0.9);
     color: #fefdff; }
-
-.social-icons--secion {
-  position: relative;
-  top: 25px; }
 
 @media (max-width: 560px) {
   form {
@@ -365,9 +334,6 @@ input[type=submit] {
     margin-right: 10px; } }
 
 .first-screen p {
-  color: #221e1e;
-  font-size: 18px;
-  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 10px; }
 
@@ -377,8 +343,10 @@ input[type=submit] {
 .below-white-box a {
   display: block;
   text-align: center;
-  font-size: 18px;
-  font-size: 1.8rem; }
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease; }
+  .below-white-box a:hover {
+    text-decoration: underline; }
 
 .margin-first-paragraph {
   margin-top: 20px; }
@@ -389,7 +357,7 @@ input[type=submit] {
 
 .speech-bubble {
   position: absolute;
-  z-index: 4; }
+  z-index: 5; }
 
 .speech-bubble--parl {
   top: -40px;
@@ -407,12 +375,8 @@ input[type=submit] {
   top: 10px;
   left: -250px; }
 
-.speech-bubble--two-querie {
+.speech-bubble--two-querie img {
   display: none; }
-
-.small-querie-disapear {
-  font-size: 20px;
-  font-size: 2rem; }
 
 .social-icons--secion {
   display: -webkit-box;
@@ -421,15 +385,13 @@ input[type=submit] {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0; }
-  .social-icons--secion p {
-    font-size: 18px;
-    font-size: 1.8rem; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0; }
   .social-icons--secion .fa {
     font-size: 20px;
-    position: relative;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    font-size: 2rem;
     color: #221e1e;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
@@ -437,8 +399,6 @@ input[type=submit] {
     margin: 0 8px; }
   .social-icons--secion .fa-facebook {
     margin-right: 8px; }
-  .social-icons--secion button {
-    height: 20px; }
   .social-icons--secion a:hover {
     color: rgba(228, 3, 3, 0.9); }
 
@@ -447,8 +407,8 @@ button {
   border: none;
   display: block;
   margin: 0 auto;
-  font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 20px;
+  font-size: 2rem; }
 
 @media (max-width: 1344px) {
   .speech-bubble img {
@@ -485,24 +445,26 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 30px; }
+    margin: 25px 0; }
   .speech-bubble--two-querie img {
-    max-width: 85%; }
+    max-width: 85%;
+    display: inline-block; }
   .speech-bubble {
     display: none; }
   .speech-bubble--two-querie button {
     margin-right: 25px; }
   .rock--two {
-    margin-left: 30px; }
-  .small-querie-disapear {
-    display: none; } }
+    margin-left: 30px; } }
 
 @media (max-width: 740px) {
   .margin-first-paragraph {
     margin-top: 20px; }
   .rock--two {
     margin-left: 10px; } }
+
+@media (max-width: 600px) {
+  .margin-first-paragraph {
+    margin-top: 5px; } }
 
 @media (max-width: 450px) {
   .speech-bubble--two-querie {
@@ -513,38 +475,31 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 30px;
-    margin-top: 30px; }
+    margin: 25px 0; }
   .speech-bubble--two-querie img {
     width: 80%; } }
 
-@media (max-width: 600px) {
-  .margin-first-paragraph {
-    margin-top: 5px; } }
-
-h3 {
-  font-size: 30px;
-  font-size: 3rem;
-  color: #221e1e;
-  font-weight: 400; }
-
-h4 {
-  font-size: 16px;
-  font-size: 1.6rem;
-  color: #3d3636;
-  font-style: italic;
-  font-weight: 400; }
+.insult-generated {
+  margin: 20px 0; }
 
 .insult-style, .date-of-insult {
   text-align: center; }
 
 .insult-style {
-  text-align: center; }
-  .insult-style p:first-letter {
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 45px;
-    font-size: 4.5rem; }
+  font-size: 30px;
+  font-size: 3rem; }
+
+.insult-style:first-letter {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 45px;
+  font-size: 4.5rem; }
+
+.date-of-insult {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #3d3636;
+  font-style: italic; }
 
 @media (max-width: 450px) {
   .social-icons--secion p {
@@ -565,8 +520,7 @@ footer {
 
 @media (max-width: 700px) {
   .footer-leftside--katie {
-    margin-right: 10px;
-    margin-bottom: 10px; }
+    margin: 0 10px; }
   .footer-col-media-querie {
     display: -webkit-box;
     display: -ms-flexbox;

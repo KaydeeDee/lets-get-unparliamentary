@@ -215,10 +215,10 @@ $(document).ready(function () {
         };
         // end if statements for gerenator
 
-        var finalInsult = '<h3><span class="insult-style"><p>' + insult + '</p></span></h3>';
+        var finalInsult = '<p class="insult-style">' + insult + '</p>';
         $('.insult-generated').html(finalInsult);
 
-        var finalDateOfInsult = '<h4><span class="date-of-insult"><p>' + dateOfInsult + '</p></span></h4>';
+        var finalDateOfInsult = '<p class="date-of-insult">' + dateOfInsult + '</p>';
         $('.date-of-insult').html(finalDateOfInsult);
 
         $('.twitter-query').attr("data-description", insult);

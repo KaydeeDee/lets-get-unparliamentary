@@ -1,14 +1,5 @@
-h3 {
-    @include font-size-value(30);
-    color: $primary-color;
-    font-weight: 400;
-}
-
-h4 {
-    @include font-size-value(16);
-    color: lighten($primary-color, 10);  
-    font-style: italic; 
-    font-weight: 400;
+.insult-generated {
+    margin: 20px 0;
 }
 
 .insult-style, .date-of-insult {
@@ -16,12 +7,21 @@ h4 {
 }
 
 .insult-style {
-      text-align: center;
-    p:first-letter{
-        text-transform: capitalize;
-        font-weight: 700;
-        @include font-size-value(45);
+    @include font-size-value(30);
+}
+
+.insult-style:first-letter {
+    text-transform: capitalize;
+    font-weight: 700;
+    @include font-size-value(45);
+
     }
+
+.date-of-insult {
+    @include font-size-value(16);
+    color: lighten($primary-color, 10);  
+    font-style: italic; 
+
 }
 
 // media queries

@@ -1,6 +1,4 @@
 .first-screen p {
-    color: $primary-color;
-    @include font-size-value(18);
     text-align: center;
     margin-bottom: 10px;
 }
@@ -12,8 +10,13 @@
 .below-white-box a {
     display: block;
     text-align: center;
-    @include font-size-value(18);
+    transition: 0.3s ease;
+
+        &:hover {
+            text-decoration: underline;
+        }
 }
+
 
 .margin-first-paragraph {
     margin-top: 20px;
@@ -28,7 +31,7 @@
 
 .speech-bubble {
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
 
 .speech-bubble--parl {
@@ -51,12 +54,8 @@
     left: -250px;
 }
 
-.speech-bubble--two-querie {
+.speech-bubble--two-querie img {
     display: none;
-}
-
-.small-querie-disapear {
-    @include font-size-value(20);
 }
 
 // social icons
@@ -64,39 +63,35 @@
 .social-icons--secion {
     display: flex;
     justify-content: flex-end;
-    margin: 0;
-    p {
-        @include font-size-value(18);
-    }
-     .fa {
-        font-size: 20px;
-        position: relative;
-        transform: translateY(20px);
+    align-items: center;
+    margin: 25px 0;
+
+    .fa {
+        @include font-size-value(20);
         color: $primary-color;
         transition: 0.3s;
     } 
+
     .fa-twitter {
         margin: 0 8px;
     }
+
     .fa-facebook {
         margin-right: 8px;
     }
-    button {
-        height: 20px;
-    }
+
     a:hover {
         color: $highlight;
     }
 } 
 
-// aside
 
 button {
     background: none;
     border: none;
     display: block;
     margin: 0 auto;
-    @include font-size-value(18);
+    @include font-size-value(20);
 }
 
 // media queries
@@ -146,11 +141,11 @@ button {
    .speech-bubble--two-querie {
        display: flex;
        justify-content: space-between;
-       margin-top: 40px;
-       margin-bottom: 30px;
+       margin: 25px 0;
    }
    .speech-bubble--two-querie img {
        max-width: 85%;
+       display: inline-block;
    }
    .speech-bubble {
        display: none;
@@ -160,9 +155,6 @@ button {
    }
    .rock--two {
     margin-left: 30px;
-   }
-   .small-querie-disapear {
-       display: none;
    }
 }
 
@@ -175,20 +167,19 @@ button {
    }
 }
 
-@media (max-width: 450px) {
-     .speech-bubble--two-querie {
-         flex-direction: column;
-         align-items: center;
-         margin-bottom: 30px;
-         margin-top: 30px;
-     }
-     .speech-bubble--two-querie img {
-         width: 80%;
-     }
-}
-
 @media (max-width: 600px) {
     .margin-first-paragraph {
         margin-top: 5px;
     }
+}
+
+@media (max-width: 450px) {
+     .speech-bubble--two-querie {
+         flex-direction: column;
+         align-items: center;
+         margin: 25px 0;
+     }
+     .speech-bubble--two-querie img {
+         width: 80%;
+     }
 }

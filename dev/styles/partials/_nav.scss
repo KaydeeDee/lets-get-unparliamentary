@@ -12,13 +12,6 @@ footer a, nav a, button {
     }
 }
 
-button {
-    transition: 0.9s ease;
-    &:hover {
-        font-weight: bold;
-    }
-}
-
 .nav-class a {
     margin-top: 10px;
     transition: 0.3s;
@@ -33,17 +26,17 @@ button {
 
 // media queries
 
-@media (max-width: 1220px) {
-    .wrapper-footer-nav {
-        max-width: 900px;
-    }
-}
+// @media (max-width: 1220px) {
+//     .wrapper-footer-nav {
+//         max-width: 900px;
+//     }
+// }
 
-@media (max-width: 905px) {
-    .wrapper-footer-nav {
-        max-width: 700px;
-    }
-}
+// @media (max-width: 905px) {
+//     .wrapper-footer-nav {
+//         max-width: 700px;
+//     }
+// }
 
 @media (max-width: 700px) {
     .wrapper-footer-nav {
