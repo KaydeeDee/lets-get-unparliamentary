@@ -1,5 +1,5 @@
 .insult-generated {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .insult-style, .date-of-insult {
@@ -27,7 +27,7 @@
 // media queries
 
 @media (max-width: 450px) {
-    .social-icons--secion p{
+    .social-icons--secion p {
         @include font-size-value(20);
         justify-content: center;
     }

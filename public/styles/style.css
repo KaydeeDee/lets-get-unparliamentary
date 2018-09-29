@@ -218,9 +218,6 @@ footer a, nav a {
   font-size: 1.4rem;
   font-variant: small-caps; }
 
-main {
-  margin-top: 6vh; }
-
 @media (max-width: 900px) {
   h1 {
     font-size: 55px;
@@ -480,7 +477,7 @@ button {
     width: 80%; } }
 
 .insult-generated {
-  margin: 20px 0; }
+  margin: 25px 0; }
 
 .insult-style, .date-of-insult {
   text-align: center; }
