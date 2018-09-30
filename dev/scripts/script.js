@@ -219,7 +219,7 @@
             if (userName) {
                 insultGenerator(userName);
                 $("section.first-screen").addClass("first-screen-off");
-                $("section.first-screen").addClass("second-screen");
+                // $("section.first-screen").addClass("second-screen");
                 $(".form-second").show();
             } else {
                 alert('Please put in your name to continue!');

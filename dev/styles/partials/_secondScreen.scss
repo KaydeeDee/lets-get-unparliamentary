@@ -8,6 +8,7 @@
 
 .insult-style {
     @include font-size-value(30);
+    min-height: 100px;
 }
 
 .insult-style:first-letter {

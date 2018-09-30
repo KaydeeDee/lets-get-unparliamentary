@@ -10,7 +10,7 @@
 .below-white-box a {
     display: block;
     text-align: center;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 
         &:hover {
             text-decoration: underline;
@@ -85,8 +85,8 @@
     }
 } 
 
-
-button {
+//anchor tag under white box asking for users to send more insults
+.below-white-box {
     background: none;
     border: none;
     display: block;
@@ -141,20 +141,17 @@ button {
    .speech-bubble--two-querie {
        display: flex;
        justify-content: space-between;
+       align-items: center;
        margin: 25px 0;
    }
    .speech-bubble--two-querie img {
-       max-width: 85%;
        display: inline-block;
    }
    .speech-bubble {
        display: none;
    }
    .speech-bubble--two-querie button {
-        margin-right: 25px;
-   }
-   .rock--two {
-    margin-left: 30px;
+        margin: 0 25px;
    }
 }
 
@@ -162,24 +159,18 @@ button {
     .margin-first-paragraph {
         margin-top: 20px;
     }
-    .rock--two {
-    margin-left: 10px;
-   }
+
+    .speech-bubble--two-querie {
+         flex-direction: column;
+         margin: 25px 0;
+     }
+     .speech-bubble--two-querie img {
+         width: 80%;
+     }
 }
 
 @media (max-width: 600px) {
     .margin-first-paragraph {
         margin-top: 5px;
     }
-}
-
-@media (max-width: 450px) {
-     .speech-bubble--two-querie {
-         flex-direction: column;
-         align-items: center;
-         margin: 25px 0;
-     }
-     .speech-bubble--two-querie img {
-         width: 80%;
-     }
 }

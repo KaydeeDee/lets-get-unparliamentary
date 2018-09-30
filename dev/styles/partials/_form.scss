@@ -2,21 +2,35 @@ form {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    flex-wrap: wrap;
 }    
     
 input, .again-button {
     border: 3px solid $primary-color;
     color: $primary-color;
-    padding: 10px 30px;
     @include font-size-value(18);
     background: $secondary-color;
     margin-right: 10px;
+    font-family: $paragraph-font;
+}
+
+.input--form-text {
+    padding: 15px 30px;
+}
+
+input[type=submit] {
+    padding: 15px 40px;
+}
+
+.again-button {
+    width: 180px;
+    height: 58px;
+    margin: 0;
 }
         
-input[type=submit], form button {
-    padding: 10px 35px;
+input[type=submit], .again-button {
     font-variant: small-caps;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 
     &:hover {
         background: $highlight;
@@ -28,26 +42,18 @@ input[type=submit], form button {
     display: none;
 }
 
-.again-button {
-    margin: 0;
-    transition: 0.3s;
-    font-variant: small-caps;
-    @include font-size-value(18);
-    font-family: $paragraph-font;
-
-    &:hover {
-        background: $highlight;
-        color: $secondary-color;
-        }
-}
-
     // media queries
 
-@media (max-width: 560px) {
+@media (max-width: 800px) {
     form {
         flex-direction: column;
         align-items: center;
     }
+
+    .input--form-text {
+        margin-right: 0;
+    }
+
     input[type=submit] {
         margin-top: 10px;
     }
