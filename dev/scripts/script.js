@@ -213,18 +213,17 @@
         ];
 
     
-        $('form').on('submit', function(event) {
-            event.preventDefault();
-            const userName = $('input').val().trim();
-            if (userName) {
-                insultGenerator(userName);
-                $("section.first-screen").addClass("first-screen-off");
-                // $("section.first-screen").addClass("second-screen");
-                $(".form-second").show();
-            } else {
-                alert('Please put in your name to continue!');
-            }
-        });
+     $('form').on('submit', function (event) {
+         event.preventDefault();
+         const userName = $('input').val().trim();
+         if (userName) {
+             insultGenerator(userName);
+             $(".first-screen").hide();
+             $(".second-screen").show();
+         } else {
+             alert('Please put in your name to continue!');
+         }
+     });
 
         // end form as first interation
 

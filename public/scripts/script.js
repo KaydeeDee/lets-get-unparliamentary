@@ -166,9 +166,8 @@ $(document).ready(function () {
         var userName = $('input').val().trim();
         if (userName) {
             insultGenerator(userName);
-            $("section.first-screen").addClass("first-screen-off");
-            // $("section.first-screen").addClass("second-screen");
-            $(".form-second").show();
+            $(".first-screen").hide();
+            $(".second-screen").show();
         } else {
             alert('Please put in your name to continue!');
         }

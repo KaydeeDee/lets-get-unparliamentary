@@ -49,14 +49,15 @@ h1, h2, p {
     border: 3px solid $primary-color;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .wrapper-footer-nav {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 // to fix floating footer
@@ -79,7 +80,6 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
-    max-width: 1800px;
 }
 
 img {
@@ -128,20 +128,13 @@ p {
 }
 
 // media queries
+@media (max-width: 650px) {
+    .wrapper-inner {
+            max-width: 95%;
+        }
+}
 
-// @media (max-width: 900px) {
-//     h1 {
-//         @include font-size-value(55);
-//     }
-// }
-
-// @media (max-width: 700px) {
-//     h1 {
-//         @include font-size-value(45);
-//     }
-// }
-
-@media (max-width: 350px) {
+@media (max-width: 370px) {
     h1 {
         @include font-size-value(35);
     }
