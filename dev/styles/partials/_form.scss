@@ -5,7 +5,7 @@ form {
     flex-wrap: wrap;
 }    
     
-input, .again-button {
+input, .again-button, form button {
     border: 3px solid $primary-color;
     color: $primary-color;
     @include font-size-value(18);
@@ -18,7 +18,7 @@ input, .again-button {
     padding: 15px 30px;
 }
 
-input[type=submit] {
+button[type=submit] {
     padding: 15px 40px;
 }
 
@@ -28,7 +28,7 @@ input[type=submit] {
     margin: 0;
 }
         
-input[type=submit], .again-button {
+button[type=submit], .again-button {
     font-variant: small-caps;
     transition: all 0.3s ease;
 
@@ -50,7 +50,7 @@ input[type=submit], .again-button {
         margin-right: 0;
     }
 
-    input[type=submit] {
+    button[type=submit] {
         margin-top: 10px;
     }
     .again-button {

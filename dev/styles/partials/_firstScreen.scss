@@ -7,17 +7,6 @@
     display: none;
 }
 
-.below-white-box a {
-    display: block;
-    text-align: center;
-    transition: all 0.3s ease;
-
-        &:hover {
-            text-decoration: underline;
-        }
-}
-
-
 .margin-first-paragraph {
     margin-top: 20px;
 }
@@ -86,12 +75,15 @@
 } 
 
 //anchor tag under white box asking for users to send more insults
-.below-white-box {
-    background: none;
-    border: none;
-    display: block;
-    margin: 0 auto;
+.below-white-box a {
     @include font-size-value(20);
+    transition: all 0.3s ease;
+    display: block;
+    text-align: center;
+
+     &:hover {
+            text-decoration: underline;
+        }
 }
 
 // media queries

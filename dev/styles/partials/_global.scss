@@ -53,8 +53,7 @@ h1, h2, p {
 }
 
 .wrapper-footer-nav {
-    margin: 0 auto;
-    padding: 5px 10px;
+    padding: 5px 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,16 +76,17 @@ body {
     padding: 1px;
 
 }
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 img {
     max-width: 100%;
 }
 
-// headings
+// heading
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 h1 {
     font-size: 6vw;
@@ -120,11 +120,6 @@ a, input, p {
 p {
     font-weight: 400;
     color: $primary-color;
-}
-
- footer a, nav a {
-    @include font-size-value(14);
-    font-variant: small-caps;
 }
 
 // media queries
