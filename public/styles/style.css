@@ -181,8 +181,8 @@ h1, h2, p {
   padding: 1px; }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(51, 48, 51, 0.7)), to(rgba(33, 37, 31, 0.6))), url("./assets/HOC seats.jpg");
-  background-image: linear-gradient(to right, rgba(51, 48, 51, 0.7), rgba(33, 37, 31, 0.6)), url("./assets/HOC seats.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(51, 48, 51, 0.7)), to(rgba(33, 37, 31, 0.6))), url("./assets/HOC-seats.jpg");
+  background-image: linear-gradient(to right, rgba(51, 48, 51, 0.7), rgba(33, 37, 31, 0.6)), url("./assets/HOC-seats.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -213,7 +213,7 @@
         ];
 
     
-     $('form').on('submit', function (event) {
+     $('form').on('submit', function(event) {
          event.preventDefault();
          const userName = $('input').val().trim();
          if (userName) {
@@ -286,7 +286,7 @@
 
     //   code that helps twitter in top right pop up
 
-    $('.popup').click(function (event) { 
+    $('.popup').click(function(event) { 
         var width = 575, height = 400, left = ($(window).width() - width) / 2, top = ($(window).height() - height) / 2, 
         url = $(this).attr('href'), opts = 'status=1' + ',width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
         window.open(url, 'twitter', opts); 
@@ -296,7 +296,7 @@
     
     // reset button
 
-     $('.again-button').on('click', function (event) {
+     $('.again-button').on('click', function(event) {
          event.preventDefault();
          location.reload();
      });
