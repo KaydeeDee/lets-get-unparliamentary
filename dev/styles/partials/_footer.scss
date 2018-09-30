@@ -1,8 +1,19 @@
 footer {
       padding: 1px;
       background: rgba($primary-color, 0.6);
-      margin-top: 10px;
+
+        a {
+           @include font-size-value(16);
+            font-family: $header-font;
+            font-variant: small-caps;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $highlight;
+            }
+        }
 }
+
 
 // media queries
 

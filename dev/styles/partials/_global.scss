@@ -61,7 +61,7 @@ h1, h2, p {
 
 // to fix floating footer
 .footer-fixer {
-    min-height: calc(100vh - 46px);
+    min-height: calc(100vh - 30px);
     padding: 1px; 
 }
 
@@ -129,7 +129,7 @@ p {
         }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 420px) {
     h1 {
         @include font-size-value(35);
     }

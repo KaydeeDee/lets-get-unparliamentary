@@ -176,7 +176,7 @@ h1, h2, p {
           align-items: center; }
 
 .footer-fixer {
-  min-height: calc(100vh - 46px);
+  min-height: calc(100vh - 30px);
   padding: 1px; }
 
 body {
@@ -226,7 +226,7 @@ p {
   .wrapper-inner {
     max-width: 95%; } }
 
-@media (max-width: 370px) {
+@media (max-width: 420px) {
   h1 {
     font-size: 35px;
     font-size: 3.5rem; } }
@@ -249,26 +249,10 @@ nav {
     transition: all 0.3s ease;
     font-size: 22px;
     font-size: 2.2rem; }
-
-footer a {
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-family: "Vollkorn", serif;
-  font-variant: small-caps;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  footer a:hover {
-    color: rgba(228, 3, 3, 0.9); }
+    nav a:hover {
+      color: rgba(228, 3, 3, 0.9); }
 
 @media (max-width: 700px) {
-  .wrapper-footer-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   nav a {
     text-align: center; } }
 
@@ -395,7 +379,8 @@ button[type=submit], .again-button {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: block;
-  text-align: center; }
+  text-align: center;
+  margin: 0px 10px; }
   .below-white-box a:hover {
     text-decoration: underline; }
 
@@ -519,8 +504,16 @@ button[type=submit], .again-button {
 
 footer {
   padding: 1px;
-  background: rgba(34, 30, 30, 0.6);
-  margin-top: 10px; }
+  background: rgba(34, 30, 30, 0.6); }
+  footer a {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "Vollkorn", serif;
+    font-variant: small-caps;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    footer a:hover {
+      color: rgba(228, 3, 3, 0.9); }
 
 @media (max-width: 700px) {
   .wrapper-footer-nav {
