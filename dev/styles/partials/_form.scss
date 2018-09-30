@@ -32,7 +32,8 @@ button[type=submit], .again-button {
     font-variant: small-caps;
     transition: all 0.3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background: $highlight;
         color: $secondary-color;
     }

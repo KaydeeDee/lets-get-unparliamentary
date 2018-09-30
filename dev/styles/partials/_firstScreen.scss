@@ -69,7 +69,8 @@
         margin-right: 8px;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
         color: $highlight;
     }
 } 
@@ -82,7 +83,8 @@
     text-align: center;
     margin: 0px 10px;
 
-     &:hover {
+     &:hover,
+     &:focus {
             text-decoration: underline;
         }
 }

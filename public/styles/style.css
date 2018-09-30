@@ -130,6 +130,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 html {
   font-size: 62.5%; }
 
@@ -249,7 +259,7 @@ nav {
     transition: all 0.3s ease;
     font-size: 22px;
     font-size: 2.2rem; }
-    nav a:hover {
+    nav a:hover, nav a:focus {
       color: rgba(228, 3, 3, 0.9); }
 
 @media (max-width: 700px) {
@@ -291,7 +301,7 @@ button[type=submit], .again-button {
   font-variant: small-caps;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  button[type=submit]:hover, .again-button:hover {
+  button[type=submit]:hover, button[type=submit]:focus, .again-button:hover, .again-button:focus {
     background: rgba(228, 3, 3, 0.9);
     color: #fefdff; }
 
@@ -370,7 +380,8 @@ button[type=submit], .again-button {
     margin: 0 8px; }
   .social-icons--secion .fa-facebook {
     margin-right: 8px; }
-  .social-icons--secion a:hover {
+  .social-icons--secion a:hover,
+  .social-icons--secion a:focus {
     color: rgba(228, 3, 3, 0.9); }
 
 .below-white-box a {
@@ -381,7 +392,7 @@ button[type=submit], .again-button {
   display: block;
   text-align: center;
   margin: 0px 10px; }
-  .below-white-box a:hover {
+  .below-white-box a:hover, .below-white-box a:focus {
     text-decoration: underline; }
 
 @media (max-width: 1344px) {
@@ -512,7 +523,7 @@ footer {
     font-variant: small-caps;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-    footer a:hover {
+    footer a:hover, footer a:focus {
       color: rgba(228, 3, 3, 0.9); }
 
 @media (max-width: 700px) {
